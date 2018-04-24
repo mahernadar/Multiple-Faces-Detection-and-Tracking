@@ -31,7 +31,7 @@ clc
 % method = 4 -> Always comparing the markers with the ones found in the
 % FIRST frame.
 % oldpoints
-method = 3;
+method = 2;
 
 
 % Display the detected points.
@@ -47,7 +47,7 @@ shapeInserter = vision.ShapeInserter('Shape', 'Polygons', 'BorderColor','Custom'
 % Create a cascade detector object.
 faceDetector = vision.CascadeObjectDetector();
 % Open a video file
-videoFileReader = vision.VideoFileReader('obama.mp4');
+videoFileReader = vision.VideoFileReader('vid5.mp4');
 
 % Read a video frame and run the face detector.
 
